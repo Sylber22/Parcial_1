@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1558048688 source:c:\users\alumno\desktop\bertello\parcial_1bertello\biblo_utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558043880 c:\users\alumno\desktop\bertello\parcial_1bertello\biblo_utn.h
+
+1558048688 source:c:\users\alumno\desktop\bertello\parcial_1bertello\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Tipo.h"
+
+1558045825 c:\users\alumno\desktop\bertello\parcial_1bertello\validaciones.h
+
+1558048688 source:c:\users\alumno\desktop\bertello\parcial_1bertello\orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Tipo.h"
+
+1558047096 c:\users\alumno\desktop\bertello\parcial_1bertello\orquesta.h
+	"Tipo.h"
+
+1558048418 c:\users\alumno\desktop\bertello\parcial_1bertello\tipo.h
+
+1558047532 source:c:\users\alumno\desktop\bertello\parcial_1bertello\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Tipo.h"
+
+1558045825 source:c:\users\alumno\desktop\bertello\parcial_1bertello\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+

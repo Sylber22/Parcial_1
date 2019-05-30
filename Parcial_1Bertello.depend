@@ -58,3 +58,510 @@
 	"Biblo_UTN.h"
 	"Validaciones.h"
 
+1558050660 source:g:\bertello\parcial_1bertello\biblo_utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558043882 g:\bertello\parcial_1bertello\biblo_utn.h
+
+1558045826 g:\bertello\parcial_1bertello\validaciones.h
+
+1558226166 source:g:\bertello\parcial_1bertello\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Tipo.h"
+
+1558048420 g:\bertello\parcial_1bertello\tipo.h
+
+1558045826 source:g:\bertello\parcial_1bertello\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558282264 source:g:\bertello\parcial_1bertello\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558274184 g:\bertello\parcial_1bertello\orquesta.h
+
+1558274920 source:g:\bertello\parcial_1bertello\orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+
+1558282522 source:g:\bertello\parcial_1bertello\instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558271914 source:g:\bertello\parcial_1bertello\musico.c
+
+1558282796 g:\bertello\parcial_1bertello\musico.h
+	"Orquesta.h"
+	"Instrumento.h"
+
+1558282522 g:\bertello\parcial_1bertello\instrumento.h
+
+1558544909 source:d:\utn\parcial_1bertello\biblo_utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558043882 d:\utn\parcial_1bertello\biblo_utn.h
+
+1558045826 d:\utn\parcial_1bertello\validaciones.h
+
+1558550832 source:d:\utn\parcial_1bertello\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Informes.h"
+
+1558550795 d:\utn\parcial_1bertello\orquesta.h
+
+1558541151 d:\utn\parcial_1bertello\musico.h
+	"Instrumento.h"
+
+1558494989 d:\utn\parcial_1bertello\instrumento.h
+
+1558542665 source:d:\utn\parcial_1bertello\musico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558550795 source:d:\utn\parcial_1bertello\orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558045826 source:d:\utn\parcial_1bertello\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558536728 source:d:\utn\parcial_1bertello\instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558550795 source:d:\utn\parcial_1bertello\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Informes.h"
+
+1558553732 d:\utn\parcial_1bertello\informes.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558544910 source:d:\parcial_1bertello\biblo_utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558043882 d:\parcial_1bertello\biblo_utn.h
+
+1558045826 d:\parcial_1bertello\validaciones.h
+
+1558569451 source:d:\parcial_1bertello\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Informes.h"
+
+1558550796 d:\parcial_1bertello\orquesta.h
+
+1558541152 d:\parcial_1bertello\musico.h
+	"Instrumento.h"
+
+1558494990 d:\parcial_1bertello\instrumento.h
+
+1558568460 d:\parcial_1bertello\informes.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558561950 source:d:\parcial_1bertello\instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558568604 source:d:\parcial_1bertello\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Informes.h"
+
+1558568726 source:d:\parcial_1bertello\musico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558565922 source:d:\parcial_1bertello\orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558045826 source:d:\parcial_1bertello\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558544910 source:g:\parcial_1bertellodespues del parcial\biblo_utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558043882 g:\parcial_1bertellodespues del parcial\biblo_utn.h
+
+1558045826 g:\parcial_1bertellodespues del parcial\validaciones.h
+
+1558914554 source:g:\parcial_1bertellodespues del parcial\instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558550796 g:\parcial_1bertellodespues del parcial\orquesta.h
+
+1558541152 g:\parcial_1bertellodespues del parcial\musico.h
+	"Instrumento.h"
+
+1558914080 g:\parcial_1bertellodespues del parcial\instrumento.h
+
+1558911650 source:g:\parcial_1bertellodespues del parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Informes.h"
+
+1558911648 g:\parcial_1bertellodespues del parcial\informes.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558914228 source:g:\parcial_1bertellodespues del parcial\musico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558565924 source:g:\parcial_1bertellodespues del parcial\orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558045826 source:g:\parcial_1bertellodespues del parcial\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558914080 source:g:\parcial_1bertellodespues del parcial\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Informes.h"
+
+1559087516 source:d:\utn\parcial_1bertelloconinformes\biblo_utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1558043882 d:\utn\parcial_1bertelloconinformes\biblo_utn.h
+
+1558045826 d:\utn\parcial_1bertelloconinformes\validaciones.h
+
+1559139034 source:d:\utn\parcial_1bertelloconinformes\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Informes.h"
+
+1558550796 d:\utn\parcial_1bertelloconinformes\orquesta.h
+
+1559069301 d:\utn\parcial_1bertelloconinformes\musico.h
+	"Instrumento.h"
+
+1558914080 d:\utn\parcial_1bertelloconinformes\instrumento.h
+
+1559147354 d:\utn\parcial_1bertelloconinformes\informes.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1559147354 source:d:\utn\parcial_1bertelloconinformes\instrumento.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1559138573 source:d:\utn\parcial_1bertelloconinformes\musico.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1559147738 source:d:\utn\parcial_1bertelloconinformes\orquesta.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+
+1558045826 source:d:\utn\parcial_1bertelloconinformes\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+
+1559137726 source:d:\utn\parcial_1bertelloconinformes\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"Biblo_UTN.h"
+	"Validaciones.h"
+	"Orquesta.h"
+	"Musico.h"
+	"Instrumento.h"
+	"Informes.h"
+

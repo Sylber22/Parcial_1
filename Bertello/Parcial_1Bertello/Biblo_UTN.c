@@ -251,6 +251,8 @@ int getString(char* pResultado, char* msg)
  * \param reintentos cantidad de reintentos habilitadas para ingresar un dato correcto
  * \return 0 si el texto contiene solo letras -1 si no
  */
+
+
 int getTelefono(char* pResultado, char* msg, char* msgError,int reintentos)
 {
     char bufferStr[20];
@@ -276,6 +278,7 @@ int getTelefono(char* pResultado, char* msg, char* msgError,int reintentos)
  * \param -
  * \return -
  */
+
 void cleanStdin(void)
 {
     int x;
@@ -293,7 +296,6 @@ void cleanStdin(void)
 int menu()
 {
     int opcionElegida;
-    printf("\n---------MENU-----------\n1)Agregar Orquesta\n2)Eliminar Orquesta\n3)Imprimir Orquesta\n4)Agregar musico\n5)Modificar musico");
-    getInt(&opcionElegida,"\n6)Eliminar musico\n7)Imprimir musico\n8)Agregar Instrumento\n9)Imprimir Instrumento\n10)Informes\n11)Salir\n\nOPCION: ", "\n-INGRESO MAL EL DATO-\n");
+    getInt(&opcionElegida,"Menu\n1)Agregar Orquesta\n2)Eliminar\n3)Imprimir\n4)Agregar Musico\n5)Modificar\n6)Modificar\n7)Imprimir\n8)Agregar Instrumento\n9)Imprimir\n10)Salir\n\nOPCION: ", "\n-INGRESO MAL EL DATO-\n");
    return opcionElegida;
 }

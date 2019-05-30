@@ -35,26 +35,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Biblo_UTN.h" />
-		<Unit filename="Informes.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Informes.h" />
-		<Unit filename="Instrumento.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Instrumento.h" />
-		<Unit filename="Musico.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Musico.h" />
-		<Unit filename="Orquesta.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Orquesta.h" />
-		<Unit filename="Validaciones.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Validaciones.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

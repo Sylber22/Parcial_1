@@ -3,12 +3,13 @@
 #include <time.h>
 #include <string.h>
 #include <ctype.h>
+#include <conio.h>
 
 #include "Biblo_UTN.h"
 #include "Validaciones.h"
 #include "Orquesta.h"
-#include "Tipo.h"
-
+#include "Musico.h"
+#include "Instrumento.h"
 
 int generateIdOrq()
 {
@@ -20,7 +21,7 @@ int generateIdOrq()
 /** \brief To indicate that all position in the array are empty,
 * this function put the flag (isEmpty) in 0 in all
 * position of the array
-* \param list Employee* Pointer to array of employees
+* \param list * Pointer to array of employees
 * \param len int Array length
 * \return int Return (-1) if Error [Invalid length or NULL pointer] - (0) if Ok
 *
@@ -28,7 +29,7 @@ int generateIdOrq()
 int orq_Init(Orquestas* list, int len)
 {
     int ret = -1;
-     if ((list!=NULL) && (len>=0))
+     if ((list!=NULL) && (len>0))
      {
         for(int i=0; i<len; i++)
         {
@@ -40,7 +41,7 @@ int orq_Init(Orquestas* list, int len)
 }
 
 /** \brief This funcion look for the fist empty place in the array
- * \param list Employee* Pointer to array of employees
+ * \param list * Pointer to array of employees
  * \param len int Array length
  * \param pResult pointer type int* to the empty direccion
  * \return int Return (-1) if Error [Invalid length or NULL pointer] -
@@ -52,7 +53,7 @@ int orq_FindFree(Orquestas* list, int len, int* pResult)
     int i;
     for(i=0;i<len;i++)
         {
-            if(!list[i].isEmpty)
+            if(list[i].isEmpty==0)
             {
                 (*pResult)=i;
                 ret=0;
@@ -63,59 +64,48 @@ int orq_FindFree(Orquestas* list, int len, int* pResult)
     return ret;
 }
 
-/** \brief carga un empleado nuevo
-* \param list employee*
+/** \brief carga una orquesta nueva
+* \param list *
 * \param len int
 * \return int Return (-1) if Error [Invalid length or
 NULL pointer or without free space] - (0) if Ok
 */
-int orq_Add(Orquestas* list,int len, TiposDORQ* clase, int lenTip)
+int orq_Add(Orquestas* list,int len)
 {
     int ret=-1;
-    int idOrq;
     char name[51];
     char lugar[51];
     int tipoO;
     int index;
-
 
     if(!orq_FindFree(list, len, &index))
             {
                if((!getStringLetras(name,"Ingrese nombre de la orquesta: ", "\n-INGRESO MAL EL DATO-\n", 2))&&
                   (!getStringLetras(lugar,"Ingrese lugar de la orquesta: ", "\n-INGRESO MAL EL DATO-\n", 2)))
                   {
-                                hardcodearTipoOrquesta(clase, lenTip);
-                                for(int i=0; i<lenTip; i++)
-                                     {
-                                         printf("%d-%s \n", clase[i].idTip, clase[i].descripcion);
-                                     }
-                                tipoO= getValidInt("\nElija al tipo correspondiente: ","\n-INGRESO MAL EL DATO-\n", 0, 3);
-
-                                if((tipoO>0 && tipoO<4) &&
-                                    (!orq_IsValidAdd(list,len,name,lugar,tipoO,index)))
-                                {
-                                    printf("-ALTA EXITOSA- ID: %d\n", idOrq);
-
-                                    ret=0;
-                                }//ALTA
-                    }//LUGAR Y NOMBRE
+                    tipoO= getValidInt("\n1)Filarmonica\n2)Sinfonica\n3)Camara\nElija el tipo correspondiente: ","\n-INGRESO MAL EL DATO-\n", 0, 3);
+                    if((tipoO>0 && tipoO<4) &&
+                    (!orq_IsValidAdd(list,len,name,lugar,tipoO,index)))
+                    {
+                        printf("-ALTA EXITOSA ID ASIGNADO: %d-\n", list[index].idOrq);
+                        ret=0;
+                    }//ALTA
+                  }//LUGAR Y NOMBRE
             }//FIND FREE
-               else
-                {
-                    printf("No hay lugar para otra carga.");
-                }
+            else
+            {
+                printf("No hay lugar para otra carga.");
+            }
     return ret;
 }
 
-/** \brief add in a existing list of employees the values received as parameters
+/** \brief add in a existing list of orquestas the values received as parameters
 * in the first empty position
-* \param list employee*
+* \param list *
 * \param len int
-* \param id int
+* \param tipo int
 * \param name[] char
-* \param lastName[] char
-* \param salary char
-* \param sector int
+* \param index int
 * \return int Return (-1) if Error [Invalid length or
 NULL pointer or without free space] - (0) if Ok
 */
@@ -137,45 +127,35 @@ int orq_IsValidAdd(Orquestas* list, int len, char* name, char* lugar, int tipoO,
     return ret;
 }
 
-/** \brief Muestra un unico empleado
- * \param lista array de empleados
+/** \brief Muestra una unica orquesta
+ * \param lista array de orquestas
  * \param index int posicion del array a ser mostrada
- * \return int 0 si los datos se cargaron correctamente 1 si hubo un error
+ * \return int 0 si los datos se cargaron correctamente -1 si hubo un error
  */
-int orq_PrintOnly(Orquestas* list,int index)
+int orq_PrintOnly(Orquestas* list, int index)
 {
     int ret=-1;
-    int largo= 0;
-    char *tipoChar= NULL;
     int tipoInt= 0;
+    char pResult[51];
 
-    if(list!=NULL)
+    if((list!=NULL)&& list[index].isEmpty==1)
     {
-        printf("ID   NOMBRE  LUGAR  TIPO\n");
-        if(list[index].isEmpty == 1)
-        {
-            printf("%d  %s    %s  ",list[index].idOrq,
-                                    list[index].name,
-                                    list[index].lugar);
+            printf("%d\t    %s\t   %s\t ",list[index].idOrq,
+                                          list[index].name,
+                                          list[index].lugar);
         tipoInt=list[index].tipoO;
-        tipoChar= retTipChar(clase, lenTip, tipoInt);
-        printf("\t %s", tipoChar);
-        largo=strlen(tipoChar);
-        for(int i=0; i<10-largo; i++)
-        {
-            printf(" ");
-        }
-            ret=0;
-        }
+        retTipChar(list, tipoInt ,pResult);
+        printf("\t %s\n", pResult);
+        ret=0;
     }
     return ret;
 }
 
-/** \brief print the content of employees array
+/** \brief print the content of array
 *
-* \param list Employee*
+* \param list *
 * \param len int
-* \return int 0 si los datos se cargaron correctamente 1 si hubo un error
+* \return int 0 si los datos se cargaron correctamente -1 si hubo un error
 */
 int orq_Print(Orquestas* list,int len)
 {
@@ -183,77 +163,121 @@ int orq_Print(Orquestas* list,int len)
     int i;
     if(list!= NULL)
     {
-
-        for( i=0; i<len ; i ++ )
+        printf("ID\t   ORQUESTA\t     LUGAR\t      TIPO\n");
+        for(i=0; i<len ; i ++)
         {
             if(list[i].isEmpty == 1)
             {
-              orq_PrintOnly(list,i, clase);
+              orq_PrintOnly(list,i);
               ret=0;
             }
         }
     }
+    else
+        {
+            printf("no hay datos cargados");
+        }
     return ret;
 }
 
-/** \brief modifica datos existentes
+/** \brief find an orquesta by Id en returns the index position in array.
+** \param list *
+* \param len int
+* \param id int
+* \return Return  index position or (-1) if [Invalid length or NULL
+pointer received or employee not found]
+*/
+int orq_FindById(Orquestas* list, int len,int idOrq)
+{
+    int ret= -1;
+    for (int i=0; i<len; i++)
+        {
+            if (list[i].isEmpty == 1 && list[i].idOrq == idOrq)
+            {
+                ret = i;
+                break;
+            }
+        }
+    return ret;
+}
+/** \brief fuerza la carga de datos
+ * \param array y tamaño
+ * \return Return  (-1) if error 0 is ok
  *
- * \param lista del array
- * \param tamaño del array
-  * \param idPelis identidicacion del empleado a modificar
- * \return 0 si hubo alguna modificacion 1 si no se logro
  */
 
- /** \brief Remove a eEmployee  by Id (put isEmpty Flag in 1)
-*
-* \param eEmployee  *list: Pointer to Array of employees
-* \param len int: length of the Array of employees
-* \param id int: Unique identifier for each employee
-* \return int Return (-1) if Error [Invalid length or NULL pointer or if can't
-find a employee] - (0) if Ok
-*
-*/
-
-int orq_Delete(Orquestas* list, int len, TiposDORQ* clase, int lenTip)
+int hardcodearOrquesta(Orquestas* list, int len)
 {
-    ret=-1;
-    int idOrq;
-    int confirmErase;
-    int indexIs=-1;
-
-    orq_Print(list, len, clase,lenTip);
-    idOrq= getValidInt("\n Ingrese el ID de la Orquesta a eliminar:\n\n","ERROR", 0, 1000);
-    indexIs= orq_FindById(list, len, idOrq);
-
-    if (indexIs==-1)
+    int ret=-1;
+    Orquestas bufferlist[]=
     {
-        printf("\nLa Orquesta no existe");
-        system("pause");
-    }
-    else
+        {1,generateIdOrq(), "Orquesta1", "Lugar1", 1},//"Sinfonica"},
+        {1,generateIdOrq(), "Orquesta2", "Lugar1", 2},//"Camara"},
+        {1,generateIdOrq(), "Orquesta3", "Lugar2", 3}, //"Filarmonica"},
+        {1,generateIdOrq(), "Orquesta4", "Lugar3", 3},//"Filarmonica"},
+
+    };
+    for(int i=0; i<4; i++)
     {
+        list[i] = bufferlist[i];
         system("cls");
-        Orq_PrintOnly(list, indexIs);
-
-        printf("\n\n\n Esta seguro que desea eliminar %s\n\n",list[indexIs].name);
-        printf("\n\t 1-Si \t\t 2-No  \n\n? ");
-
-        confirmErase=getche();
-
-        while (confirmErase!=49&&confirmErase!=50)
-        {
-            printf("? ");
-            confirmErase=getche();
-        }
-
-        if (confirmErase==49)
-        {
-            printf("\n\n %s ha sido eliminado!\n\n", lista[indexIs].name);
-            peliculas[indexIs].isEmpty=0;
-            ret=0;
-            system("pause");
-        }
-    }//ELSE
-
+        ret =0;
+    }
     return ret;
+}
+
+/** \brief toma la informacion parasa y devuelve char
+ * \param   lista de campos
+ * \param largo de array
+ * \param entero
+ * \return char
+ */
+
+int retTipChar(Orquestas* list, int tipoInt, char* pResult)
+{
+    char ret=-1;
+    char fil[]="Filarmonica";
+    char sin[]="Sinfonica";
+    char cam[]="Camara";
+    if (list!= NULL)
+    {
+        switch(tipoInt)
+        {
+        case 1:
+            strncpy(pResult,fil, sizeof(fil));
+            ret=0;
+         break;
+        case 2:
+            strncpy(pResult,sin, sizeof(sin));
+            ret=0;
+         break;
+        case 3:
+            strncpy(pResult,cam, sizeof(cam));
+            ret=0;
+         break;
+        }//Swich
+     }
+    return ret;
+}
+
+/** \brief toma un valor int y devuelve char
+ * \param estructura de orquestas
+ * \param array de  orquestas y su tamaño
+ * \return puntero a char
+ */
+char* orq_RetChar(Orquestas* list, int len, int idOrq)
+{
+    char* pOrquesta=NULL;
+
+    if (list!= NULL && list >0 )
+    {
+        for (int i=0;i<len;i++)
+        {
+            if (idOrq==list[i].idOrq && list[i].isEmpty==1)
+            {
+               pOrquesta=list[i].name;
+            }
+        }
+    }
+    return pOrquesta;
 }
